@@ -22,5 +22,6 @@ const seedAll = async () => {
 
   process.exit(0);
 };
-
+console.log("------- this is ")
 seedAll();
+

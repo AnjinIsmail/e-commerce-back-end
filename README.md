@@ -3,7 +3,7 @@
 ## User Story
 
 As a manger at an internet retail company
-I want a back end for mu e-commerce website that uses the latest technologies
+I want a back end for my e-commerce website that uses the latest technologies
 SO that my company can compete with other e-commerce companies
 
 ## Usage
