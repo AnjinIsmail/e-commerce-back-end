@@ -65,6 +65,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+  console.log("=================================================", req.body)
   Category.update(req.body, {
     individualHooks: true,
     where: {
@@ -73,9 +74,10 @@ router.put('/:id', (req, res) => {
   })
     .then(dbcategory => {
       if (!dbcategory[0]) {
-        res.status(404).json({ message: 'No category found with this nid' });
+        res.status(404).json({ message: 'No category found with this id' });
         return;
       }
+      console.log("==============================", dbcategory);
       res.json(dbcategory);
     })
     .catch(err => {
